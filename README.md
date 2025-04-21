@@ -55,10 +55,23 @@ pip install -r requirements.txt
 
 # 4. Crear .env en la raiz del proyecto y colocar el OPENAI_APIKEY={APIKEY}, por favor, solicitar la API
 
-# 5. Ejecutar interfaz web
+# 5. Desplegar instancia de redis para embeddings e historial de mensajes:
+    1. Instalar Docker Desktop
+        
+        *https://www.docker.com/products/docker-desktop/*
+        
+    2. Desde la terminal como administrador ejecutar:
+        
+        ```bash
+        docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest
+        
+        ```
+        
+
+# 6. Ejecutar interfaz web
 streamlit run app.py
 
-# 6. Si una vez cargado el embedding, hay un error de index, por favor, volver a correr el proyecto con el paso 5.
+# 7. Si una vez cargado el embedding, hay un error de index, por favor, volver a correr el proyecto con el paso 5.
 ```
 
 ---
