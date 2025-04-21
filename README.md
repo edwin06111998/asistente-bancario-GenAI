@@ -53,8 +53,12 @@ source venv/bin/activate  # En Windows: .\venv\Scripts\activate
 # 3. Instalar dependencias
 pip install -r requirements.txt
 
-# 4. Ejecutar interfaz web
+# 4. Crear .env en la raiz del proyecto y colocar el OPENAI_APIKEY={APIKEY}, por favor, solicitar la API
+
+# 5. Ejecutar interfaz web
 streamlit run app.py
+
+# 6. Si una vez cargado el embedding, hay un error de index, por favor, volver a correr el proyecto con el paso 5.
 ```
 
 ---
