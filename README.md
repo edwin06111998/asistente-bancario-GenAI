@@ -37,42 +37,6 @@ Este proyecto implementa un **agente conversacional bancario** con arquitectura 
 
 ![diagrama](/images/diagrama.jpg)
 
----
-
-## 🛠 Instalación Rápida
-
-```bash
-# 1. Clonar repositorio
-git clone https://github.com/tu_usuario/chatbot-banco.git
-cd chatbot-banco
-
-# 2. Crear entorno virtual
-python -m venv venv
-source venv/bin/activate  # En Windows: .\venv\Scripts\activate
-
-# 3. Instalar dependencias
-pip install -r requirements.txt
-
-# 4. Crear .env en la raiz del proyecto y colocar el OPENAI_APIKEY={APIKEY}, por favor, solicitar la API
-
-# 5. Desplegar instancia de redis para embeddings e historial de mensajes:
-    1. Instalar Docker Desktop
-        
-        *https://www.docker.com/products/docker-desktop/*
-        
-    2. Desde la terminal como administrador ejecutar:
-        
-        ```bash
-        docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest
-        
-        ```
-        
-
-# 6. Ejecutar interfaz web
-streamlit run app.py
-
-# 7. Si una vez cargado el embedding, hay un error de index, por favor, volver a correr el proyecto con el paso 5.
-```
 
 ---
 
@@ -110,11 +74,16 @@ pip install -r .\requirements.txt
 docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest
 ```
 
+6. ** Crear .env**
+Crear .env en la raiz del proyecto y colocar el OPENAI_APIKEY={APIKEY}, por favor, solicitar la API
+
 5. **Ejecutar el chatbot**
 
 ```bash
 streamlit run .\appStreamLit.py
 ```
+
+Si una vez cargado el embedding, hay un error de index, por favor, volver a correr el proyecto con el paso 5.
 
 ---
 
