@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+primaryColor = "#e6007e"        # magenta
+backgroundColor = "#ffffff"     # blanco
+secondaryBackgroundColor = "#f9f9f9"
+textColor = "#000000"
+font = "sans serif"

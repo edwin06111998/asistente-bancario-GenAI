@@ -1,0 +1,17 @@
+typing_extensions
+python-dotenv
+fastapi
+pydantic
+typing
+openai
+redis
+langgraph
+langchain
+langchain_community
+langchain_core
+langchain_ollama
+langchain_openai
+langchain_redis
+duckduckgo-search
+uvicorn
+streamlit
